@@ -22,27 +22,26 @@ export default function Resume() {
 
   const handleComponentChange = (component) => {
     setSelectedComponent(component);
-    AOS.refresh();
   };
 
   return (
     <>
       <Header />
-      <div className="container r-1" data-aos="fade-up">
-        <div className="row menu">
+      <div className="container r-1" data-aos="fade-up" data-aos-once="true">
+        <div className="row menu" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="0" data-aos-anchor-placement="top-center" data-aos-once="true">
 
-          <div className="col-lg-4 col-md-12  rr-1" data-aos="fade-right">
-            <h1 className="heading-1">Why hire me?</h1>
-            <p className="text-white">
+          <div className="col-lg-4 col-md-12  rr-1" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-anchor-placement="top-center" data-aos-once="true">
+            <h1 className="heading-1" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="0" data-aos-anchor-placement="top-center" data-aos-once="true">Why hire me?</h1>
+            <p className="text-white" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-anchor-placement="top-center" data-aos-once="true">
               Lorem ipsum dolor sit amet  consectetur <br />adipisicing elit.
             </p>
-            <div className="boxes">
+            <div className="boxes" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-anchor-placement="top-center" data-aos-once="true">
 
               <div
                 className="box-2"
                 style={{ backgroundColor: selectedComponent === 'Two' ? '#00ff7f' : '#27272c' }}
                 onClick={() => handleComponentChange('Two')}
-                data-aos="zoom-in"
+                data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="0" data-aos-anchor-placement="top-center" data-aos-once="true"
               >
                 Education
               </div>
@@ -50,7 +49,7 @@ export default function Resume() {
                 className="box-3"
                 style={{ backgroundColor: selectedComponent === 'Three' ? '#00ff7f' : '#27272c' }}
                 onClick={() => handleComponentChange('Three')}
-                data-aos="zoom-in"
+                data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200" data-aos-anchor-placement="top-center" data-aos-once="true"
               >
                 Skills
               </div>
@@ -58,7 +57,7 @@ export default function Resume() {
                 className="box-4"
                 style={{ backgroundColor: selectedComponent === 'Four' ? '#00ff7f' : '#27272c' }}
                 onClick={() => handleComponentChange('Four')}
-                data-aos="zoom-in"
+                data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="400" data-aos-anchor-placement="top-center" data-aos-once="true"
               >
                 About me
               </div>
@@ -66,7 +65,7 @@ export default function Resume() {
           </div>
 
 
-          <div className="col-lg-8 col-md-12 rr-2" style={{ border: '1px solid white' }} data-aos="fade-left">
+          <div className="col-lg-8 col-md-12 rr-2"  data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-anchor-placement="top-center" data-aos-once="true">
 
             {selectedComponent === 'Two' && <Two />}
             {selectedComponent === 'Three' && <Three />}

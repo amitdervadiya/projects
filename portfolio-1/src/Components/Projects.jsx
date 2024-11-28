@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-import thumb1 from './photos/logo2.png';
-import thumb2 from './photos/logo3.png';
-import thumb3 from './photos/logo4.png';
-
+import thumb1 from './photos/thumb1.png';
+import thumb2 from './photos/thumb2.png';
+import thumb3 from './photos/thumb3.png';
+import thumb5 from './photos/tsk.png';
+import thumb6 from './photos/money.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/swiper-bundle.css';
 import Header from './Header';
-import { FaArrowsUpDownLeftRight, FaArrowUpRightDots } from 'react-icons/fa6';
 import { BsArrowUpRight } from 'react-icons/bs';
 
 export default function Projects() {
@@ -24,7 +22,7 @@ export default function Projects() {
                 { name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }
             ],
             image: thumb1,
-            live: 'webs-a363d.firebaseapp.com',
+            live: 'https://integrate-ee9f9.firebaseapp.com', 
             github: '',
         },
         {
@@ -35,40 +33,52 @@ export default function Projects() {
             Stack: [
                 { name: "react js" }, { name: "Bootstrap" }, { name: "Javascript" }
             ],
-            image: thumb2,
-            live: 'integrate-ee9f9.firebaseapp.com',
-            github: '',
+            image: thumb5,
+            live: 'https://form-db9cf.firebaseapp.com ',
         },
         {
             num: '03',
-            category: 'frontend',
+            category: 'backend',
             title: 'project 3',
             description: 'Lorem ipsum dolor sit ero ipsam cum  praesentium corrupti magnam debitis dicta, dolorum accusamus doloremque tempore distinctio veritatis quaerat accusantium.',
             Stack: [
                 { name: "react js" }, { name: "Tailwind.css" }, { name: "Javascript" }
             ],
-            image: thumb3,
-            live: '',
+            image: thumb6,
+            live: 'https://admin-6cd5c.web.app',
             github: '',
         },
         {
             num: '04',
             category: 'frontend',
-            title: 'project 3',
+            title: 'project 4',
             description: 'Lorem ipsum dolor sit ero ipsam cum  praesentium corrupti magnam debitis dicta, dolorum accusamus doloremque tempore distinctio veritatis quaerat accusantium.',
             Stack: [
                 { name: "react js" }, { name: "Tailwind.css" }, { name: "Javascript" }
             ],
             image: thumb3,
-            live: '',
+            live: 'https://bootstrap-58734.web.app',
             github: '',
         },
+        {
+            num: '05',
+            category: 'backend',
+            title: 'project 5',
+            description: 'Lorem ipsum dolor sit ero ipsam cum  praesentium corrupti magnam debitis dicta, dolorum accusamus doloremque tempore distinctio veritatis quaerat accusantium.',
+            Stack: [
+                { name: "react js" }, { name: "Tailwind.css" }, { name: "Javascript" }
+            ],
+            image: thumb2,
+            live: 'https://webs-a363d.web.app',
+            github: '',
+        },
+
 
     ];
 
     const [project, setProject] = useState(projects[0]);
     const HandleSlideChange = (swiper) => {
-        const currentSlide = swiper.activeIndex; // Correct property
+        const currentSlide = swiper.activeIndex;
         setProject(projects[currentSlide]);
     };
 
@@ -86,11 +96,11 @@ export default function Projects() {
                         <div className="text leading-none">{project.num}</div>
                         <h2 className="category">{project.category} Project</h2>
                         <p className="desc">{project.description}</p>
-                        <a href=" {project.live}">
-                        <div className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center'><BsArrowUpRight className='text-white text-3xl' />
-                        </div>
+                        <a href={project.live} target='_blank'>
+                            <div className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center'><BsArrowUpRight className='text-white text-3xl' />
+                            </div>
                         </a>
-                       
+
                         <ul type="none" className="p-0 list">
                             {project.Stack.map((item, index) => (
                                 <li key={index} data-aos="zoom-in">
@@ -102,16 +112,14 @@ export default function Projects() {
                         <div className="border"></div>
                     </div>
                     <div className="col-lg-6 col-md-12 " data-aos="fade-left">
-                        <Swiper spaceBetween={0} slidesPerView={1} className='swiper1' onSlideChange={HandleSlideChange} >
+                        <Swiper spaceBetween={0} slidesPerView={1} className='swiper1 w-full h-[460px] relative flex justify-center items-center' onSlideChange={HandleSlideChange}>
                             {projects.map((project, index) => {
-                                return <SwiperSlide key={index} className='slide1'>
-                                    <div className='slide2 '>
+                                return <SwiperSlide key={index} className='slide1 h-[460px]'>
+                                    <div className='slide2'>
                                         <div></div>
-                                        <div className=' img-slides'>
-                                            <img src={project.image} alt="" fill className='imgslide' />
-
+                                        <div className='img-slides relative h-full w-full  '>
+                                            <img src={project.image} alt="" className='imgslide  h-full w-full object-cover ' />
                                         </div>
-
                                     </div>
                                 </SwiperSlide>
                             })}
