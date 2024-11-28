@@ -1,0 +1,379 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0px;
+}
+
+.bt-0 {
+  height: 42px;
+  width: 133px;
+  background-color: #ff6a58;
+}
+.h11{
+  color: #1b1117;
+  font-size: 65px;
+}
+.logo {
+  /* height: 190px; */
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+.imgslider {
+  /* height: 60px; */
+  width: 100%;
+}
+
+.work {
+  font-size: 45px;
+  color: #1b1117;
+}
+
+.active-color {
+  color: #ff6a58;
+}
+
+.slick-track {
+  /* height: 236px; */
+  width: 100%;
+}
+
+.color-1 {
+  color: #22b0fc;
+}
+
+.p1 {
+  font-size: 14px;
+  font-family: Maven Pro, sans-serif;
+  color: #212529;
+}
+
+
+.fruit {
+  height: 250px;
+  /* width: 350px; */
+  background-image: url('https://html-templates.evonicmedia.com/deskmates/assets/images/index/gallery6.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px 0px 24px;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+
+}
+
+.vegetable {
+  height: 250px;
+  /* width: 350px; */
+  background-image: url('https://html-templates.evonicmedia.com/deskmates/assets/images/index/gallery4.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+
+.juise {
+
+  height: 250px;
+  /* width: 350px; */
+  background-image: url('https://html-templates.evonicmedia.com/deskmates/assets/images/index/Companies.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px 0px 24px;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+.dried {
+  height: 250px;
+  /* width: 350px; */
+  background-image: url('https://html-templates.evonicmedia.com/deskmates/assets/images/index/spaces1.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+
+.sec2 {
+  height: 524px;
+  /* width: 350px; */
+  background-image: url('https://html-templates.evonicmedia.com/deskmates/assets/images/index/gallery5.webp');
+  background-position: 0px -15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Lora", serif;
+}
+
+.im {
+  height: 567px;
+  width: 100%;
+  background-image: url(https://html-templates.evonicmedia.com/deskmates/assets/images/index/Companies.webp);
+}
+
+.lora {
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 24px;
+  color: #82AE46;
+}
+
+.gret {
+  color: #808080;
+  font-size: 15px;
+  margin: 0px 0px 16 px;
+}
+
+.vege {
+  background-color: #82AE46;
+  color: white;
+  padding: 5px 20px;
+  font-size: 18px;
+}
+
+.s2 {
+  height: 767px;
+  width: 100%;
+  /* background-size: cover; */
+
+  background: linear-gradient(#0000009b, hwb(0 0% 100% / 0.58)), url(https://html-templates.evonicmedia.com/deskmates/assets/images/bg/Companies-bg.webp);
+  background-size: cover;
+  /* transform:  scale(1.5); */
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.flex {
+  font-size: 45px;
+  color: white;
+}
+
+.s2-p {
+  padding: 20px 50px 40px 0px;
+  color: white;
+  font-family: Maven Pro, sans-serif;
+
+}
+
+.bt3 {
+  height: 45px;
+  width: 145px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  border: 2px solid white;
+}
+
+.s3 {
+  /* height: 540px; */
+  width: 100%;
+  background: linear-gradient(90deg, rgba(252, 191, 91, 0.96) 30.21%, rgba(252, 191, 91, 0.68) 100%), url(https://html-templates.evonicmedia.com/deskmates/assets/images/bg/find-bg.webp);
+}
+
+
+.h21 {
+  font-size: 45px;
+
+}
+
+.bt12 {
+  height: 42px;
+  width: 205.77px;
+  background-color: #ff6a58;
+  border: none;
+
+}
+
+.bt12 a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-email {
+  height: 538px;
+  /* width: 646px; */
+  background-color: white;
+  position: relative;
+  top: 200px;
+  padding: 40px 30px;
+  border: 1px solid #22b0fc;
+}
+
+.btn-1 {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #22b0fc;
+  position: relative;
+}
+
+.btn-1::before {
+  content: attr(text);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 0%;
+  width: 100%;
+  background-color: rgb(0, 191, 255);
+  /* background-image: linear-gradient(to left,grey,orange); */
+  /* background-image: linear-gradient(to right,pink,skyblue); */
+  color: white;
+  transition: 0.6s linear height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-1 a {
+  background-image: linear-gradient(to bottom,
+          white, white 50%, #22b0fc 50%);
+  background-size: 100% 200%;
+  background-position: 0px -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-delay: 0.2s;
+  transition: all 0.2s ease-in-out;
+  font-weight: 900;
+}
+
+.btn-1:hover::before {
+  height: 100%;
+}
+
+.btn-1:hover>a {
+  background-position: 0px 0px;
+}
+
+input {
+  height: 45px;
+  border: 1px solid black;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.btn-2 {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #22b0fc;
+  height: 44px;
+  position: relative;
+}
+.hero{
+  height: 600px;
+  width: 100%;
+  /* background-image: url(https://html-templates.evonicmedia.com/deskmates/assets/images/bg/workspace-bg.webp); */
+}
+.btn-2::before {
+  content: attr(text);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 0%;
+  width: 100%;
+  background-color: rgb(0, 191, 255);
+  /* background-image: linear-gradient(to left,grey,orange); */
+  /* background-image: linear-gradient(to right,pink,skyblue); */
+  color: white;
+  transition: 0.6s linear height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-2 a {
+  background-image: linear-gradient(to bottom,
+          white, white 50%, #22b0fc 50%);
+  background-size: 100% 200%;
+  background-position: 0px -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-delay: 0.2s;
+  transition: all 0.2s ease-in-out;
+  /* font-weight: 900; */
+}
+
+.btn-2:hover::before {
+  height: 100%;
+}
+
+.btn-2:hover>a {
+  background-position: 0px 0px;
+}
+
+.in1{
+  height: 35px;
+  width: 100%;
+  border: transparent;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+padding-left: 10px;padding-right: 1px;
+  border-radius:20px;
+
+}
+
+.in1 span{
+  font-size: 12px;
+  color: #777777;
+}
+
+.sidearrow{
+  height: 33px;
+  width: 35px;
+  background-color: #f42f2c;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+justify-content: center;
+
+}
+
+#sidearrow{
+  font-size: 13px;
+}
+
+.input1{
+  height: 50px;
+  width: 300px;
+  /* border: 1px solid black; */
+border-radius: 20px;
+background-color: white;
+
+}
+
+#in12{
+   height: 40px;
+   width: 250px;
+  /* border: 1px solid black; */
+  border: none;
+border-radius: 20px;
+
+
+}
+
+.arrow1{
+  height: 35px;
+  width: 40px;
+  border: 1px solid black;
+border-radius: 20px;
+}
+
+.white span{
+  color: white;
+}

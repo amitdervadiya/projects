@@ -1,0 +1,156 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .form-input {
+    margin: 10px;
+    padding: 12px;
+    width: 260px;
+    border: none;
+    /* border-radius: 20px; */
+    background-color: #f4f4f9;
+    color: #333;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    transform: scale(1.05);
+  }
+  
+  .gender-options {
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+    margin-bottom: 10px;
+  }
+  
+  .gender-options label {
+    color: #f0f0f5;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  
+  .form-button {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .form-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .table-section {
+    margin-top: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+  }
+  
+  table th,
+  table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #333;
+    border-bottom: 2px solid #555;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  table tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .action-btn {
+    margin-right: 5px;
+    padding: 8px 12px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .action-btn:hover {
+    background-color: #ff4a33;
+    transform: scale(1.1);
+  }
+  
+  .no-records {
+    text-align: center;
+    color: #f9f9f9;
+    font-size: 1.2rem;
+  }
+  
+  .delete{
+    background-color: #ff4a33;
+    height: 25px;
+    width: 80px;
+    color: white;
+    font-weight: bold;
+    border: none;
+  }
+  .edit{
+    background-color: #4CAF50;
+    height: 25px;
+    width: 80px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-left: 15px;
+  }
