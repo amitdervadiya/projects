@@ -659,6 +659,7 @@ gap: 15px;
  
     .part-1 {
        width: 100%;
+       padding: 5px;
     }
  
     .part-2 {
@@ -666,6 +667,7 @@ gap: 15px;
        justify-content: center;
        align-items: center;
        display: flex;
+       padding: 5px;
     }
  
  

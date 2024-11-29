@@ -27,7 +27,7 @@ export default function Resume() {
   return (
     <>
       <Header />
-      <div className="container r-1" data-aos="fade-up" data-aos-once="true">
+      <div className="container r-1 overflow-hidden" data-aos="fade-up" data-aos-once="true">
         <div className="row menu" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" data-aos-delay="0" data-aos-anchor-placement="top-center" data-aos-once="true">
 
           <div className="col-lg-4 col-md-12  rr-1" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-anchor-placement="top-center" data-aos-once="true">
@@ -38,7 +38,7 @@ export default function Resume() {
             <div className="boxes" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-delay="500" data-aos-anchor-placement="top-center" data-aos-once="true">
 
               <div
-                className="box-2"
+                className="box-2 cursor-pointer"
                 style={{ backgroundColor: selectedComponent === 'Two' ? '#00ff7f' : '#27272c' }}
                 onClick={() => handleComponentChange('Two')}
                 data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="0" data-aos-anchor-placement="top-center" data-aos-once="true"
@@ -46,7 +46,7 @@ export default function Resume() {
                 Education
               </div>
               <div
-                className="box-3"
+                className="box-3 cursor-pointer"
                 style={{ backgroundColor: selectedComponent === 'Three' ? '#00ff7f' : '#27272c' }}
                 onClick={() => handleComponentChange('Three')}
                 data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200" data-aos-anchor-placement="top-center" data-aos-once="true"
@@ -54,10 +54,10 @@ export default function Resume() {
                 Skills
               </div>
               <div
-                className="box-4"
+                className="box-4 cursor-pointer"
                 style={{ backgroundColor: selectedComponent === 'Four' ? '#00ff7f' : '#27272c' }}
                 onClick={() => handleComponentChange('Four')}
-                data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="400" data-aos-anchor-placement="top-center" data-aos-once="true"
+                data-aos="zoom-in"  data-aos-anchor-placement="top-center" data-aos-once="true"
               >
                 About me
               </div>

@@ -14,7 +14,7 @@ export default function Contact() {
         <>
           <Header/>
 
-            <div className="container c1 bg-black" data-aos="fade-up">
+            <div className="container c1 bg-black overflow-hidden" data-aos="fade-up">
                 <div className="row contact-row">
                     <div className="col-lg-6 c2" data-aos="fade-right">
                         <h1 className='font-semibold heading-3 '>Let's work together</h1>
@@ -37,7 +37,7 @@ export default function Contact() {
                             <textarea name="" id="message" className='focus1' alt="message" placeholder='message' data-aos="fade-up">
                           
                             </textarea>
-                            <button className='send' data-aos="zoom-in">send</button>
+                            <button className='send' >send</button>
                         </div>
 
                     </div>

@@ -9,7 +9,7 @@ function Header() {
     return (
         <>
 
-            <Navbar expand="lg" className="bg-black">
+            <Navbar expand="lg" className="bg-black" >
                 <Container>
                     <Navbar.Brand as={NavLink} to="/" className="hover1">
                         <img src={logo} alt="" className="h-[60px] w-[110px]" />

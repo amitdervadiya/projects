@@ -8,9 +8,9 @@ export default function Hero() {
     }, []);
 
     return (
-        <div className="container hero" data-aos="fade-up">
+        <div className="container hero overflow-hidden" data-aos="fade-up">
             <div className="row">
-                <div className="col-md-12 col-lg-6 part-1 gap-7">
+                <div className="col-md-12 col-lg-6 part-1 gap-7 col-sm-12">
                     <span className="white">Web developer</span>
                     <h1 className="size">Hello I'm</h1>
                     <h2 className="size1">Amit Dervadiya</h2>
@@ -45,7 +45,7 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-5 part-2 sm:order-1 lg:order-none">
+                <div className="col-md-5 part-2 sm:order-1 lg:order-none col-sm-12 ">
                     <svg width="400" height="400" className="keycircle">
                         <circle cx="200" cy="200" r="180" className="circle"></circle>
                     </svg>

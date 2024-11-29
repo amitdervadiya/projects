@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import thumb1 from './photos/thumb1.png';
@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import Header from './Header';
 import { BsArrowUpRight } from 'react-icons/bs';
+import { BiCaretLeft, BiCaretRight } from 'react-icons/bi';
 
 export default function Projects() {
     const projects = [
@@ -22,7 +23,7 @@ export default function Projects() {
                 { name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }
             ],
             image: thumb1,
-            live: 'https://integrate-ee9f9.firebaseapp.com', 
+            live: 'https://integrate-ee9f9.firebaseapp.com',
             github: '',
         },
         {
@@ -72,11 +73,11 @@ export default function Projects() {
             live: 'https://webs-a363d.web.app',
             github: '',
         },
-
-
     ];
 
     const [project, setProject] = useState(projects[0]);
+    const swiperRef = useRef(null); // Ref to hold Swiper instance
+
     const HandleSlideChange = (swiper) => {
         const currentSlide = swiper.activeIndex;
         setProject(projects[currentSlide]);
@@ -90,14 +91,15 @@ export default function Projects() {
     return (
         <>
             <Header />
-            <div className="container hero1" data-aos="fade-up">
+            <div className="container hero1 overflow-hidden" data-aos="fade-up ">
                 <div className="row projects-row">
                     <div className="col-lg-6 col-md-12 pro" data-aos="fade-right">
                         <div className="text leading-none">{project.num}</div>
                         <h2 className="category">{project.category} Project</h2>
                         <p className="desc">{project.description}</p>
-                        <a href={project.live} target='_blank'>
-                            <div className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center'><BsArrowUpRight className='text-white text-3xl' />
+                        <a href={project.live} target='_blank' rel="noreferrer">
+                            <div className='w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center'>
+                                <BsArrowUpRight className='text-white text-3xl' />
                             </div>
                         </a>
 
@@ -112,18 +114,34 @@ export default function Projects() {
                         <div className="border"></div>
                     </div>
                     <div className="col-lg-6 col-md-12 " data-aos="fade-left">
-                        <Swiper spaceBetween={0} slidesPerView={1} className='swiper1 w-full h-[460px] relative flex justify-center items-center' onSlideChange={HandleSlideChange}>
+                        <Swiper
+                            spaceBetween={0}
+                            slidesPerView={1}
+                            className='swiper1 w-full h-[350px] relative flex justify-center items-center'
+                            onSlideChange={HandleSlideChange}
+                            onSwiper={(swiper) => (swiperRef.current = swiper)} // Store Swiper instance in ref
+                        >
                             {projects.map((project, index) => {
-                                return <SwiperSlide key={index} className='slide1 h-[460px]'>
-                                    <div className='slide2'>
-                                        <div></div>
-                                        <div className='img-slides relative h-full w-full  '>
-                                            <img src={project.image} alt="" className='imgslide  h-full w-full object-cover ' />
+                                return (
+                                    <SwiperSlide key={index} className='slide1 h-[350px]'>
+                                        <div className='slide2'>
+                                            <div></div>
+                                            <div className='img-slides relative h-full w-full'>
+                                                <img src={project.image} alt="" className='imgslide h-full w-full object-cover' />
+                                            </div>
                                         </div>
-                                    </div>
-                                </SwiperSlide>
+                                    </SwiperSlide>
+                                );
                             })}
                         </Swiper>
+                        <div className='w-full flex justify-end items-center mt-1 gap-3'>
+                            <div className="prevous h-20 w-20 bg-[#232329] flex justify-center items-center" onClick={() => swiperRef.current?.slidePrev()}>
+                                <BiCaretLeft className='text-3xl text-[#00ff7f]' />
+                            </div>
+                            <div className="next h-20 w-20 bg-[#232329] flex justify-center items-center" onClick={() => swiperRef.current?.slideNext()}>
+                                <BiCaretRight className='text-3xl text-[#00ff7f]' />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
