@@ -1,14 +1,8 @@
-import React, { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from "react";
 
 export default function Hero() {
-    useEffect(() => {
-        AOS.init({ duration: 2000 });
-    }, []);
-
     return (
-        <div className="container hero overflow-hidden" data-aos="fade-up">
+        <div className="container hero overflow-hidden">
             <div className="row">
                 <div className="col-md-12 col-lg-6 part-1 gap-7 col-sm-12">
                     <span className="white">Web developer</span>

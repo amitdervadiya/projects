@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import thumb1 from './photos/thumb1.png';
 import thumb2 from './photos/thumb2.png';
@@ -84,16 +83,14 @@ export default function Projects() {
     };
 
     useEffect(() => {
-        AOS.init({ duration: 2000 });
-        AOS.refresh();
     }, []);
 
     return (
         <>
             <Header />
-            <div className="container hero1 overflow-hidden" data-aos="fade-up ">
+            <div className="container hero1 overflow-hidden">
                 <div className="row projects-row">
-                    <div className="col-lg-6 col-md-12 pro" data-aos="fade-right">
+                    <div className="col-lg-6 col-md-12 pro">
                         <div className="text leading-none">{project.num}</div>
                         <h2 className="category">{project.category} Project</h2>
                         <p className="desc">{project.description}</p>
@@ -105,7 +102,7 @@ export default function Projects() {
 
                         <ul type="none" className="p-0 list">
                             {project.Stack.map((item, index) => (
-                                <li key={index} data-aos="zoom-in">
+                                <li key={index}>
                                     {item.name}
                                     {index !== project.Stack.length - 1 && ','}
                                 </li>
@@ -113,7 +110,7 @@ export default function Projects() {
                         </ul>
                         <div className="border"></div>
                     </div>
-                    <div className="col-lg-6 col-md-12 " data-aos="fade-left">
+                    <div className="col-lg-6 col-md-12 ">
                         <Swiper
                             spaceBetween={0}
                             slidesPerView={1}

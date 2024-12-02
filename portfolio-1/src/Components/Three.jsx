@@ -14,65 +14,97 @@ export default function Three() {
           autem  <br />impedit, asperiores, eumo illum possimus!
         </p>
         <div className="row r-2">
-          <div className="box mediabox col-lg-12 col-md-12 col-sm-6">
-            <div className="icon-boxes">
-              <FaHtml5
-                data-tooltip-id="html-tooltip"
-                className="icon-hover"
-              />
-              <Tooltip id="html-tooltip" content="HTML5" place="top" animation="fade" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+          <div className="box mediabox col-lg-12 col-md-12 col-sm-12 ">
+            <div className="div flex flex-col justify-center items-center gap-2">
+              <div className="icon-boxes ">
+                <FaHtml5
+                  data-tooltip-id="html-tooltip"
+                  className="icon-hover"
+                />
+
+                <Tooltip id="html-tooltip" content="HTML5" place="top" animation="fade" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+              </div>
+              <span className='text-2xl text-[#00ff7f]' >html5</span>
             </div>
-            <div className="icon-boxes">
-              <FaCss3
-                data-tooltip-id="css-tooltip"
-                className="icon-hover"
-              />
-              <Tooltip id="css-tooltip" content="CSS3" place="top" animation="" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+            <div className="div flex flex-col justify-center items-center gap-2">
+              <div className="icon-boxes">
+                <FaCss3
+                  data-tooltip-id="css-tooltip"
+                  className="icon-hover"
+                />
+                <Tooltip id="css-tooltip" content="CSS3" place="top" animation="" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+              </div>
+              <span className='text-2xl text-[#00ff7f]' >css3</span>
             </div>
-            <div className="icon-boxes">
-              <FaJava
-                data-tooltip-id="java-tooltip"
-                className="icon-hover"
-              />
-              <Tooltip id="java-tooltip" content="Java" place="top" animation="fade" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+            <div className="div flex flex-col justify-center items-center gap-2">
+              <div className="icon-boxes">
+                <FaJava
+                  data-tooltip-id="java-tooltip"
+                  className="icon-hover"
+                />
+                <Tooltip id="java-tooltip" content="Java" place="top" animation="fade" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+              </div>
+              <span className='text-2xl text-[#00ff7f]' >html5</span>
             </div>
-            <div className="icon-boxes">
-              <FaReact
-                data-tooltip-id="react-tooltip"
-                className="icon-hover"
-              />
-              <Tooltip id="react-tooltip" content="React" place="top" animation="fade" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+            <div className="div flex flex-col justify-center items-center gap-2">
+              <div className="icon-boxes">
+                <FaReact
+                  data-tooltip-id="react-tooltip"
+                  className="icon-hover"
+                />
+
+                <Tooltip id="react-tooltip" content="React" place="top" animation="fade" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+              </div>
+
+              <span className='text-2xl text-[#00ff7f]' >html5</span>
             </div>
+
+
+
           </div>
+
           <div className="box col-lg-12 col-md-12">
-            <div className="icon-boxes">
-              <SiTailwindcss
-                data-tooltip-id="tailwind-tooltip"
-                className="icon-hover"
-              />
-              <Tooltip id="tailwind-tooltip" content="Tailwind CSS" place="top" animation="fade" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+            <div className="div flex flex-col justify-center items-center gap-2">
+              <div className="icon-boxes">
+                <SiTailwindcss
+                  data-tooltip-id="tailwind-tooltip"
+                  className="icon-hover"
+                />
+                <Tooltip id="tailwind-tooltip" content="Tailwind CSS" place="top" animation="fade" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+              </div>
+              <span className='text-2xl text-[#00ff7f]' >html5</span>
             </div>
-            <div className="icon-boxes">
-              <FaBootstrap
-                data-tooltip-id="bootstrap-tooltip"
-                className="icon-hover"
-              />
-              <Tooltip id="bootstrap-tooltip" content="Bootstrap" place="top" animation="fade" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+            <div className="div flex flex-col justify-center items-center gap-2">
+              <div className="icon-boxes">
+                <FaBootstrap
+                  data-tooltip-id="bootstrap-tooltip"
+                  className="icon-hover"
+                />
+                <Tooltip id="bootstrap-tooltip" content="Bootstrap" place="top" animation="fade" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+              </div>
+              <span className='text-2xl text-[#00ff7f]' >html5</span>
             </div>
-            <div className="icon-boxes">
-              <FaNodeJs
-                data-tooltip-id="node-tooltip"
-                className="icon-hover"
-              />
-              <Tooltip id="node-tooltip" content="Node.js" place="top" animation="fade" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+            <div className="div flex flex-col justify-center items-center gap-2">
+              <div className="icon-boxes">
+                <FaNodeJs
+                  data-tooltip-id="node-tooltip"
+                  className="icon-hover"
+                />
+                <Tooltip id="node-tooltip" content="Node.js" place="top" animation="fade" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+              </div>
+              <span className='text-2xl text-[#00ff7f]' >html5</span>
             </div>
-            <div className="icon-boxes">
-              <FaFigma
-                data-tooltip-id="figma-tooltip"
-                className="icon-hover"
-              />
-              <Tooltip id="figma-tooltip" content="Figma" place="top" animation="fade" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+            <div className="div flex flex-col justify-center items-center gap-2">
+              <div className="icon-boxes">
+                <FaFigma
+                  data-tooltip-id="figma-tooltip"
+                  className="icon-hover"
+                />
+                <Tooltip id="figma-tooltip" content="Figma" place="top" animation="fade" style={{ fontSize: '14px', backgroundColor: 'white', color: 'black', backdropFilter: '100px', zIndex: '5' }} />
+              </div>
+              <span className='text-2xl text-[#00ff7f]' >html5</span>
             </div>
+
           </div>
         </div>
       </div>
