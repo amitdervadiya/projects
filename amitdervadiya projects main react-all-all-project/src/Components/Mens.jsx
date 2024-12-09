@@ -27,7 +27,7 @@ export default function Mens() {
                                     <h2 className="text-lg font-bold">{e.title}</h2>
                                     <p className="text-gray-600">{e.category}</p>
                                     <p className="text-gray-600">{e.price}</p>
-                                    <p className="text-gray-600">Rating: {e.rating.rate} ({e.rating.count} reviews)</p>
+                                
                                 </div>
                             </div>
                         )

@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { apifetch } from '../Features/Slice';
+import { adddata, apifetch, deletedata, editdata } from '../Features/Slice';
 import Navbar from './Navbar';
 
 export default function Pagination() {
-    const [title, setTitle] = useState();
-    const [price, setPrice] = useState();
-    const [img, setImage] = useState();
-    const [category, setCategory] = useState();
+    const [title, setTitle] = useState('');
+    const [price, setPrice] = useState('');
+    const [category, setCategory] = useState('');
     const dispatch = useDispatch();
+
 
     useEffect(() => {
         dispatch(apifetch());
@@ -16,35 +16,57 @@ export default function Pagination() {
 
 
     const apiuse = useSelector((state) => state.apikey.data);
-    const adddata = () => {
-
-    }
 
     return (
         <div className="p-4">
             <Navbar />
-            <br /><br />
-            <div>
-                <input type="text" onChange={(e) => setCategory(e.target.value)} />
-                <br />
-                <input type="text" onChange={(e) => setPrice(e.target.value)} />
-                <br />
-                {/* <input type="text" onChange={(e)=>setImage()}/> */}
-                <input type="text" onChange={(e) => setTitle(e.target.value)} />
-                <br />
-                
-                <button onClick={adddata}>
-                    adddata
+            <div className="my-4">
+                <input
+                    type="text"
+                    placeholder="Category"
+                    onChange={(e) => setCategory(e.target.value)}
+                    className="border p-2 w-full mb-2"
+                />
+                <input
+                    type="number"
+                    placeholder="Price"
+                    onChange={(e) => setPrice(e.target.value)}
+                    className="border p-2 w-full mb-2"
+                />
+                <input
+                    type="text"
+                    placeholder="Title"
+                    onChange={(e) => setTitle(e.target.value)}
+                    className="border p-2 w-full mb-2"
+                />
+                <button
+                    onClick={() => dispatch(adddata({ title, price, category }))}
+                    className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
+                    Add Data
                 </button>
             </div>
-            {apiuse &&
-                apiuse.map((e, i) => (
-                    <div key={i} className="">
 
-                        <p>{e.price}</p>
-                        <p className="text-gray-800 font-medium">{e.category}</p>
+            <div className="mt-4">
+                {apiuse && apiuse.map((e, i) => (
+                    <div key={i} className="border p-4 rounded mb-4 shadow">
+                        <p className="text-gray-700 font-medium">Price: {e.price}</p>
+                        <p className="text-gray-600">Category: {e.category}</p>
+                        <p className="text-gray-800 font-semibold">Title: {e.title}</p>
+                        <div className="mt-2">
+                            <button
+                                onClick={() => dispatch(deletedata(e.id))}
+                                className="bg-red-500 text-white p-2 rounded hover:bg-red-600 mr-2">
+                                Delete
+                            </button>
+                            <button
+                                onClick={() => dispatch(editdata({ id: e.id, updatedData: { title: title, price: price, category: category } }))}
+                                className="bg-yellow-500 text-white p-2 rounded hover:bg-yellow-600">
+                                Edit
+                            </button>
+                        </div>
                     </div>
                 ))}
+            </div>
         </div>
     );
 }
