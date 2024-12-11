@@ -30,7 +30,8 @@ export default function Resume() {
           <div className="col-lg-4 col-md-12  rr-1">
             <h1 className="heading-1">Why hire me?</h1>
             <p className="text-white">
-              Lorem ipsum dolor sit amet  consectetur <br />adipisicing elit.
+          
+            My strong work ethic and passion for technology make me a valuable asset to any team.
             </p>
             <div className="boxes">
 

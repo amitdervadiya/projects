@@ -6,8 +6,8 @@ export default function Two() {
             <div className="col-lg-12 col-md-12 rr-2 col-sm-12 gap-3">
                 <h1 className='heading-2 py-1'>My Education</h1>
                 <p className='text-white py-1'>
-                    Lorem ipsum dolor sit amet consectetur adipisicie
-                    autem  <br />impedit, asperiores, eumo illum possimus!
+                Combining creativity with technical expertise, I have built solutions that bridge the gap between user needs and business goals. My journey as a developer has been both challenging and rewarding.
+
                 </p>
                 <div className="row">
 

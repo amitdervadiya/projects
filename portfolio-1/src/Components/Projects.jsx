@@ -17,7 +17,7 @@ export default function Projects() {
             num: '01',
             category: 'frontend',
             title: 'project 1',
-            description: 'Lorem ipsum dolor stes praesentium corrupti magnam debitis dicta, dolorum accusamus doloremque tempore distinctio veritatis quaerat accusantium.',
+            description: '   This project showcases my expertise in crafting intuitive and responsive user interfaces.  With a focus on seamless user experience, I utilized modern web technologies to deliver visually appealing and highly functional solutions.',
             Stack: [
                 { name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }
             ],
@@ -29,7 +29,7 @@ export default function Projects() {
             num: '02',
             category: 'fullstack',
             title: 'project 2',
-            description: 'Lorem ipsum doloro vero ipsam cis volnam debitis dicta, dolorum accusamus doloremque tempore distinctio veritatis quaerat accusantium.',
+            description: 'Designed and developed a comprehensive Task Manager application utilizing a full-stack approach. This project integrates a dynamic frontend with a secure and efficient backend to provide users with  a seamless task management experience.',
             Stack: [
                 { name: "react js" }, { name: "Bootstrap" }, { name: "Javascript" }
             ],
@@ -40,7 +40,7 @@ export default function Projects() {
             num: '03',
             category: 'backend',
             title: 'project 3',
-            description: 'Lorem ipsum dolor sit ero ipsam cum  praesentium corrupti magnam debitis dicta, dolorum accusamus doloremque tempore distinctio veritatis quaerat accusantium.',
+            description: ' Developed a robust backend system for a Money Manager application. The project focuses on efficient handling of transactions, secure data storage, and seamless API integration for managing income, expenses, and budgets.',
             Stack: [
                 { name: "react js" }, { name: "Tailwind.css" }, { name: "Javascript" }
             ],
@@ -52,7 +52,7 @@ export default function Projects() {
             num: '04',
             category: 'frontend',
             title: 'project 4',
-            description: 'Lorem ipsum dolor sit ero ipsam cum  praesentium corrupti magnam debitis dicta, dolorum accusamus doloremque tempore distinctio veritatis quaerat accusantium.',
+            description: '   This project focuses on building an interactive and visually appealing user interface. Leveraging modern frameworks and best practices, it ensures a seamless and responsive user experience  across all devices.',
             Stack: [
                 { name: "react js" }, { name: "Tailwind.css" }, { name: "Javascript" }
             ],
@@ -64,7 +64,7 @@ export default function Projects() {
             num: '05',
             category: 'backend',
             title: 'project 5',
-            description: 'Lorem ipsum dolor sit ero ipsam cum  praesentium corrupti magnam debitis dicta, dolorum accusamus doloremque tempore distinctio veritatis quaerat accusantium.',
+            description: 'Built a powerful backend system enabling efficient filtering and data management.  Designed to handle complex queries, the system ensures fast and accurate retrieval   of information, supporting seamless user interactions.',
             Stack: [
                 { name: "react js" }, { name: "Tailwind.css" }, { name: "Javascript" }
             ],

@@ -206,7 +206,7 @@ gap: 15px;
  }
  
  .part-2 {
- 
+    
     background-repeat: no-repeat;
     background-size: cover;
  
@@ -624,24 +624,20 @@ gap: 15px;
  width: 100%;
  object-fit: cover;
  } */
- .imgslide{
  
- }
  @keyframes animateDasharray {
     0% {
        stroke-dasharray: 15 120 25 25;
     }
- 
     50% {
        stroke-dasharray: 16 25 92 72;
     }
- 
     100% {
        stroke-dasharray: 4 250 22 22;
     }
  }
  
- @media(min-width:420px) and (max-width:992px) {
+ @media(min-width:420px) and (max-width:1028px) {
     .hero {
        height: fit-content;
        padding: 10px;
@@ -758,7 +754,8 @@ gap: 15px;
     .hero1{
        height: fit-content;
     }
- 
+   
+
  }
  
  @media(min-width:0px) and (max-width:420px) {
@@ -893,7 +890,20 @@ gap: 15px;
    .swiper{
       height: 300px;
    }
-   
+   .keycircle {
+      width: 395px;
+      height: 395px;
+      background-repeat: no-repeat;
+      background-size: 300px;
+      background-position-x: 58px;
+      background-position-y: 36px;
+      background-image: url(Components/photos/my.png);
+      margin: 0px;
+   }
+   .part-2{
+      padding: 0px;
+
+   }
     /* projects */
     .pro{
        order: 2;

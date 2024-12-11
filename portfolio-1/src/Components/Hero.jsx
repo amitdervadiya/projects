@@ -3,15 +3,15 @@ import React from "react";
 export default function Hero() {
     return (
         <div className="container hero overflow-hidden">
-            <div className="row">
+            <div className="row sm:p-0">
                 <div className="col-md-12 col-lg-6 part-1 gap-7 col-sm-12">
                     <span className="white">Web developer</span>
                     <h1 className="size">Hello I'm</h1>
                     <h2 className="size1">Amit Dervadiya</h2>
                     <p className="white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat esse,
-                        tenetur quia repellendus in iusto laudantium impedit eligendi, eaque nam
-                        veritatis molestiae facilis asperiores suscipit ea sint, earum libero at!
+                    A passionate web developer with a knack for creating dynamic and responsive web experiences. 
+    With expertise in modern web technologies, I strive to deliver user-focused solutions that are 
+    not only functional but also visually appealing. Let's bring your ideas to life!
                     </p>
                     <div className="links">
                         <div className="link1">
@@ -39,7 +39,7 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-5 part-2 sm:order-1 lg:order-none col-sm-12 ">
+                <div className="col-md-5 part-2 sm:order-1 lg:order-none col-sm-12 flex justify-end items-center ">
                     <svg width="400" height="400" className="keycircle">
                         <circle cx="200" cy="200" r="180" className="circle"></circle>
                     </svg>
