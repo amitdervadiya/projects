@@ -11,6 +11,7 @@ import Electronics from './Components/Electronics'
 import Women from './Components/Women'
 import Jewelery from './Components/Jewelery'
 import { store } from './App/Store'
+import Random from './Components/random'
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/Womens" element={<Women />} />
             <Route path="/Electronics" element={<Electronics />} />
             <Route path="/Jewelery" element={<Jewelery />} />
+            <Route path="/Random" element={<Random />} />
 
           </Routes>
         </Router>

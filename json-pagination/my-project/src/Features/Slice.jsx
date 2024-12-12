@@ -19,12 +19,15 @@ export const deletedata = createAsyncThunk('deletedata', async (id) => {
     return id;
 });
 
-export const editdata = createAsyncThunk('editdata', async ({ editdataproduct,title, price, category}) => {
-    const response = await axios.put(`http://localhost:5000/products/${editdataproduct}`,{
-        title,price,category
+export const editdata = createAsyncThunk('editdata', async ({ id, title, price, category }) => {
+    const response = await axios.put(`http://localhost:5000/products/${id}`, {
+        title,
+        price,
+        category,
     });
-    return response.data; 
+    return response.data;
 });
+
 
 export const apidata = createSlice({
     name: 'apidata',
@@ -36,7 +39,7 @@ export const apidata = createSlice({
     reducers: {},
     extraReducers: (builder) => {
         builder
-          
+
             .addCase(apifetch.pending, (state) => {
                 state.loading = true;
                 state.error = null;
@@ -50,7 +53,7 @@ export const apidata = createSlice({
                 state.error = action.error.message;
             })
 
-           
+
             .addCase(adddata.fulfilled, (state, action) => {
                 state.data.push(action.payload);
             })
@@ -58,7 +61,7 @@ export const apidata = createSlice({
                 state.error = action.error.message;
             })
 
-       
+
             .addCase(deletedata.fulfilled, (state, action) => {
                 state.data = state.data.filter((item) => item.id !== action.payload);
             })
@@ -66,10 +69,10 @@ export const apidata = createSlice({
                 state.error = action.error.message;
             })
 
-           
+
             .addCase(editdata.fulfilled, (state, action) => {
                 const index = state.data.findIndex((item) => item.id === action.payload.id);
-                
+
             })
             .addCase(editdata.rejected, (state, action) => {
                 state.error = action.error.message;
