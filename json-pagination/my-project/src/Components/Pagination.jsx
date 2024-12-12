@@ -13,6 +13,9 @@ export default function Pagination() {
     useEffect(() => {
         dispatch(apifetch());
     }, [dispatch]);
+    useEffect(() => {
+        dispatch(apifetch())
+    })
 
     const apiuse = useSelector((state) => state.apikey.data);
 
@@ -66,7 +69,7 @@ export default function Pagination() {
                                 className="bg-white rounded shadow-md p-4 hover:shadow-lg transition duration-300"
                             >
                                 <img
-                                    src={e.image}
+                                    src={e.image ? e.image : 'https://media.istockphoto.com/id/1396814518/vector/image-coming-soon-no-photo-no-thumbnail-image-available-vector-illustration.jpg?s=612x612&w=0&k=20&c=hnh2OZgQGhf0b46-J2z7aHbIWwq8HNlSDaNp2wn_iko='}
                                     alt={e.title}
                                     className="h-48 w-full object-contain mb-4"
                                 />
