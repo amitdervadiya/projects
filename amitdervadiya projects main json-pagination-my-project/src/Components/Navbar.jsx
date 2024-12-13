@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 export default function Navbar() {
     const navigate = useNavigate();
 
@@ -16,6 +17,9 @@ export default function Navbar() {
     const Electronics = () => {
         navigate('/Electronics');
     };
+    const Random = () => {
+       navigate('/Random')
+    }
 
     return (
         <div className="h-14 w-full bg-gray-800 flex justify-center items-center space-x-4">
@@ -42,6 +46,12 @@ export default function Navbar() {
                 className="text-white bg-green-600 px-4 py-2 rounded-lg hover:bg-green-700 transition duration-200"
             >
                 Electronics
+            </button>
+            <button
+                onClick={Random}
+                className="text-black bg-white px-4 py-2 rounded-lg transition duration-200"
+            >
+          Random
             </button>
         </div>
     );

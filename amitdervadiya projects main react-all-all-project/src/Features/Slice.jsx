@@ -19,8 +19,10 @@ export const deletedata = createAsyncThunk('deletedata', async (id) => {
     return id;
 });
 
-export const editdata = createAsyncThunk('editdata', async ({ id, updatedData }) => {
-    const response = await axios.put(`http://localhost:5000/products/${id}`, updatedData);
+export const editdata = createAsyncThunk('editdata', async ({ editdataproduct,title, price, category}) => {
+    const response = await axios.put(`http://localhost:5000/products/${editdataproduct}`,{
+        title,price,category
+    });
     return response.data; 
 });
 
@@ -67,9 +69,7 @@ export const apidata = createSlice({
            
             .addCase(editdata.fulfilled, (state, action) => {
                 const index = state.data.findIndex((item) => item.id === action.payload.id);
-                if (index !== -1) {
-                    state.data[index] = action.payload; 
-                }
+                
             })
             .addCase(editdata.rejected, (state, action) => {
                 state.error = action.error.message;

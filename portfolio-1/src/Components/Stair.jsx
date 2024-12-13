@@ -1,11 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Stare from '../Animations/Stairtrnsition';
+import PageTransition from '../Animations/PageTransition';
 
 export default function Stair() {
     const star = {
-        initial: { top: '0%' },
-        animate: { top: '100%' },
-        exit: { top: '0%' },
+        initial: {
+            top: '0%',
+        },
+        animate: {
+            top: '100%',
+        },
+        exit: {
+            top: ['100%', '0%'],
+        }
     };
 
     const reverseIndex = (index) => {
@@ -15,12 +23,12 @@ export default function Stair() {
 
     return (
         <div className="relative w-full h-screen">
-            {[...Array(6)].map((_, index) => (
-                <motion.div
+            {[...Array(6)].map((_, index) => {
+                return <motion.div
                     key={index}
-                    className="bg-white absolute h-full w-full"
+                    className="bg-white relative h-full w-full"
                     variants={star}
-                    initial="initial"
+                    initial="initial" 
                     animate="animate"
                     exit="exit"
                     transition={{
@@ -29,7 +37,9 @@ export default function Stair() {
                         delay: reverseIndex(index) * 0.1,
                     }}
                 />
-            ))}
+            }
+
+            )}
         </div>
     );
 }

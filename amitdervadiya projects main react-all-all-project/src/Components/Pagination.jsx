@@ -8,13 +8,15 @@ export default function Pagination() {
     const [price, setPrice] = useState('');
     const [category, setCategory] = useState('');
     const dispatch = useDispatch();
-
+    const [editdataproduct, setEditdataProduct] = useState()
 
     useEffect(() => {
         dispatch(apifetch());
     }, [dispatch]);
 
-
+    useEffect(() => {
+        dispatch(apifetch());
+    })
     const apiuse = useSelector((state) => state.apikey.data);
 
     return (
@@ -24,12 +26,14 @@ export default function Pagination() {
                 <input
                     type="text"
                     placeholder="Category"
+                    value={category}
                     onChange={(e) => setCategory(e.target.value)}
                     className="border p-2 w-full mb-2"
                 />
                 <input
                     type="number"
                     placeholder="Price"
+                    value={price}
                     onChange={(e) => setPrice(e.target.value)}
                     className="border p-2 w-full mb-2"
                 />
@@ -38,11 +42,12 @@ export default function Pagination() {
                     placeholder="Title"
                     onChange={(e) => setTitle(e.target.value)}
                     className="border p-2 w-full mb-2"
+                    value={title}
                 />
                 <button
-                    onClick={() => dispatch(adddata({ title, price, category }))}
-                    className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
-                    Add Data
+                    onClick={() => editdataproduct ? dispatch(editdata({ editdataproduct, title, price, category })) : dispatch(adddata({ title, price, category }))}
+                    className={`bg-blue-500 text-white p-2 rounded hover:bg-blue-600 `}>
+                    {editdataproduct ? "Update Data" : "Add Data"}
                 </button>
             </div>
 
@@ -59,7 +64,12 @@ export default function Pagination() {
                                 Delete
                             </button>
                             <button
-                                onClick={() => dispatch(editdata({ id: e.id, updatedData: { title: title, price: price, category: category } }))}
+                                onClick={() => {
+                                    setEditdataProduct(e.id)
+                                    setCategory(e.category)
+                                    setPrice(e.price)
+                                    setTitle(e.title)
+                                }}
                                 className="bg-yellow-500 text-white p-2 rounded hover:bg-yellow-600">
                                 Edit
                             </button>

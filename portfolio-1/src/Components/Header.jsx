@@ -4,6 +4,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from './photos/logo.png'
+import Stare from "../Animations/Stairtrnsition";
+import Stairtrnsition from "../Animations/Stairtrnsition";
 
 function Header() {
     return (
@@ -38,8 +40,10 @@ function Header() {
                 </Container>
             </Navbar>
             <hr style={{ borderTop: '1px solid white', width: '100%' }} />
+           <Stairtrnsition></Stairtrnsition>
         </>
     );
+  
 }
 
 export default Header;

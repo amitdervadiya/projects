@@ -6,7 +6,7 @@ export default function Four() {
       <div className="col-lg-12 col-md-12 rr-4 col-sm-12">
         <h1 className='heading-2'>About Me</h1>
         <p className='text-white'>
-        I thrive in collaborative environments and am always eager to learn and apply new technologies to solve complex problems. Whether working independently or as part of a team, my goal is to build robust, scalable web applications that make a meaningful impact.
+          I thrive in collaborative environments and am always eager to learn and apply new technologies to solve complex problems. Whether working independently or as part of a team, my goal is to build robust, scalable web applications that make a meaningful impact.
         </p>
         <div className="row r-2">
           <div className=" col-lg-6 col-md-6 col-sm-6">
