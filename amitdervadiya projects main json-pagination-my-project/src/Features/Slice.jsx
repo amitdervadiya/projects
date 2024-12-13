@@ -19,12 +19,19 @@ export const deletedata = createAsyncThunk('deletedata', async (id) => {
     return id;
 });
 
+<<<<<<< HEAD:amitdervadiya projects main json-pagination-my-project/src/Features/Slice.jsx
 export const editdata = createAsyncThunk('editdata', async ({ id, title, price, category,image }) => {
+=======
+export const editdata = createAsyncThunk('editdata', async ({ id, title, price, category }) => {
+>>>>>>> 56b5206fc6cfcfe0818a0dace6cd0a5d1faa2ea9:json-pagination/my-project/src/Features/Slice.jsx
     const response = await axios.put(`http://localhost:5000/products/${id}`, {
         title,
         price,
         category,
+<<<<<<< HEAD:amitdervadiya projects main json-pagination-my-project/src/Features/Slice.jsx
         image,
+=======
+>>>>>>> 56b5206fc6cfcfe0818a0dace6cd0a5d1faa2ea9:json-pagination/my-project/src/Features/Slice.jsx
     });
     return response.data;
 });

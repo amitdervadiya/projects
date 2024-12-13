@@ -25,6 +25,10 @@
       }
     },
     {
+<<<<<<< HEAD:amitdervadiya projects main json-pagination-my-project/db.json
+=======
+      "id": "3",
+>>>>>>> 56b5206fc6cfcfe0818a0dace6cd0a5d1faa2ea9:json-pagination/my-project/db.json
       "title": "Mens Cotton Jacket",
       "price": "55",
       "category": "men's clothing",
@@ -222,6 +226,12 @@
         "rate": 3.6,
         "count": 145
       }
+    },
+    {
+      "title": "tgsdgsdr",
+      "price": "1500",
+      "category": "erydryhfdh",
+      "id": "1734014775057"
     }
   ]
 }

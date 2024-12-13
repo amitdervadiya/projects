@@ -49,7 +49,11 @@ export default function Navbar() {
             </button>
             <button
                 onClick={Random}
+<<<<<<< HEAD:amitdervadiya projects main json-pagination-my-project/src/Components/Navbar.jsx
                 className="text-black bg-white px-4 py-2 rounded-lg transition duration-200"
+=======
+                className="text-white bg-green-600 px-4 py-2 rounded-lg hover:bg-green-700 transition duration-200"
+>>>>>>> 56b5206fc6cfcfe0818a0dace6cd0a5d1faa2ea9:json-pagination/my-project/src/Components/Navbar.jsx
             >
           Random
             </button>
