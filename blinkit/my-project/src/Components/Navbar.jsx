@@ -7,7 +7,7 @@ import { PiShoppingCartBold } from 'react-icons/pi'
 export default function Navbar() {
   return (
     <>
-      <nav className='h-[86px] w-[100%] flex justify-center items-center px-5 '>
+      <nav className='h-[86px] w-[100%] flex lg:justify-center items-center  px-5 '>
         <div className="logo h-[86px] flex justify-center items-center w-[8%]">
           <svg width="134" height="30" viewBox="0 0 114 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z" fill="#F8CB46"></path>
@@ -19,7 +19,7 @@ export default function Navbar() {
         </div>
 
 
-        <div className='address h-[86px] px-6 md:px-2 justify-center items-center text-center flex flex-col w-[20%]'>
+        <div className='address h-[86px] px-6 md:px-2 md:justify-start lg:justify-center lg:items-center  flex flex-col  w-[20%]'>
           <h3 className='font-bold text-[18px]'>Delivery in 8 minutes</h3>
           <p className='text-sm'>B62, Pocket B, South City I, Sec...  </p>
         </div>
@@ -42,7 +42,7 @@ export default function Navbar() {
             < PiShoppingCartBold className='text-white text-3xl' />
             <span className='font-bold text-base text-white'>
               my cart
-       
+
             </span>
           </div>
         </div>
