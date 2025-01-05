@@ -1,0 +1,21 @@
+.logo{
+    background-image: url(https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=900/assets/ui/print/bl_logo_web.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 88%;
+    font-family: "Montserrat", serif;
+}
+.delivery{
+    font-weight: 800;
+}
+.font-locate {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+}
+.search-btn{
+    border: 1px solid rgb(236, 236, 236);
+}
+.btn-cart{
+border-radius: 10px;
+background-color: #0D831F;
+}
