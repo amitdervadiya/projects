@@ -22,16 +22,8 @@
 .search-btn{
     border: 1px solid rgb(236, 236, 236);
 }
-.btn-cart{
-border-radius: 10px;
-background-color: #0D831F;
-}
-.btn-cart {
-    background-color: #318616;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-  }
+
+
   
   .quantity-selector {
     display: flex;
@@ -51,5 +43,29 @@ background-color: #0D831F;
   .quantity-selector span {
     font-size: 16px;
     font-weight: bold;
+  }
+  
+  .btn-cart {
+    background-color: #28a745; /* Green background */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+   
+    gap: 10px;
+  }
+  
+ 
+  .btn-cart i {
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  
+  .btn-cart span {
+    display: block;
+  }
+  
+  .text-white {
+    color: #fff;
   }
   
