@@ -58,6 +58,7 @@ export function Hero() {
     };
     const handleSave = (updatedTask) => {
         dispatch(updatedata({ id: updatedTask.id, updatedTask }));
+        
     };
 
     const handleClose = () => {
@@ -164,8 +165,7 @@ export function Hero() {
 
                     <div
                         className="div-kanban w-[99%] border flex justify-evenly "
-                        style={kanbanStyle}
-                    >
+                        style={kanbanStyle}>
                         <div className="kanban-board  w-[99%] h-[99vh] ">
                             <div className="p-4 bg-background">
                                 <div className="flex   flex-col mb-4">
@@ -186,83 +186,119 @@ export function Hero() {
                                 <div className="grid grid-cols-4 gap-4">
                                     <div className={`${cardClasses} bg-gray-50 px-8`}>
                                         <h2 className="font-semibold">BACKLOG 4</h2>
-                                        {/* <div className="mt-2">
-                                    <div className={textClasses} >
-                                    <p>hello</p>
-                                    <div className="flex justify-between mt-2">
-                                    <span>⬆️</span>
-                                    <span>👤</span>
-                                    </div>
-                                    </div>
-                                    
-                                    </div> */}
                                         {
-                                            Taskdata.map((task, i) => {
-
-                                                return <div className="mt-2 cursor-pointer" key={i}>
-                                                    <div className={textClasses} >
-                                                        <p>{task.ShortSummary}</p>
-                                                        <div className="flex justify-between mt-2">
-                                                            <span>⬆️ {task.Priority}</span>
-                                                            <span>👤   {task.Assignees}</span>
-                                                            <p>{task.IssueType} </p>
+                                            Taskdata.map((task, i) => (
+                                                (
+                                                    task.Status === "Backlog"
+                                                ) && (
+                                                    <div key={i} className="mt-2" >
+                                                        <div className={textClasses}>
+                                                            <p>
+                                                                {task.ShortSummary}
+                                                            </p>
+                                                            <div className="flex justify-between mt-2">
+                                                                <span>⬇️ {task.Priority}</span>
+                                                                <span>👤 {task.Assignees}</span>
+                                                            </div>
+                                                            <button onClick={() => handleEdit(task)}>Edit</button>
+                                                            <button onClick={() => dispatch(deletedata(task.id))}>Delete</button>
                                                         </div>
+
+
+                                                        <p></p>
+
+
                                                     </div>
-
-                                                </div>
-
-
-                                                // <div key={i} className="h-[150px] w-full border-black border p-4">
-                                                //       <h3>{task.ShortSummary}</h3>
-                                                //       <p>{task.IssueType}</p>
-                                                //       <p>{task.Priority}</p>
-                                                //       <p>{task.Assignees}</p>
-                                                //       <button onClick={() => handleEdit(task)}>Edit</button>
-                                                //       <button onClick={() => dispatch(deletedata(task.id))}>Delete</button>
-                                                //     </div>
-
-                                            })}
+                                                )
+                                            ))
+                                        }
                                     </div>
                                     <div className={`${cardClasses} bg-gray-50`}>
                                         <h2 className="font-semibold">SELECTED FOR DEVELOPMENT 2</h2>
-                                        <div className="mt-2">
-                                            <div className={textClasses}>
-                                                <p>
-                                                    Each issue can be assigned priority from lowest to
-                                                    highest.
-                                                </p>
-                                                <div className="flex justify-between mt-2">
-                                                    <span>⬇️</span>
-                                                    <span>👤</span>
-                                                </div>
-                                            </div>
+                                        {
+                                            Taskdata.map((task, i) => (
+                                                (
+                                                    task.Status === "SelectedforDevelopment"
+                                                ) && (
+                                                    <div key={i} className="mt-2" >
+                                                        <div className={textClasses}>
+                                                            <p>
+                                                                {task.ShortSummary}
+                                                            </p>
+                                                            <div className="flex justify-between mt-2">
+                                                                <span>⬇️ {task.Priority}</span>
+                                                                <span>👤 {task.Assignees}</span>
+                                                            </div>
+                                                            <button onClick={() => handleEdit(task)}>Edit</button>
+                                                            <button onClick={() => dispatch(deletedata(task.id))}>Delete</button>
+                                                        </div>
 
-                                        </div>
+
+                                                        <p></p>
+
+
+                                                    </div>
+                                                )
+                                            ))
+                                        }
                                     </div>
                                     <div className={`${cardClasses} bg-gray-50`}>
                                         <h2 className="font-semibold">IN PROGRESS 2</h2>
-                                        <div className="mt-2">
-                                            <div className={textClasses}>
-                                                <p>This is an issue of type: Task.</p>
-                                                <div className="flex justify-between mt-2">
-                                                    <span>⬇️</span>
-                                                    <span>👤</span>
-                                                </div>
-                                            </div>
+                                        {
+                                            Taskdata.map((task, i) => (
+                                                (
+                                                    task.Status === "In Progress"
+                                                ) && (
+                                                    <div key={i} className="mt-2" >
+                                                        <div className={textClasses}>
+                                                            <p>
+                                                                {task.ShortSummary}
+                                                            </p>
+                                                            <div className="flex justify-between mt-2">
+                                                                <span>⬇️ {task.Priority}</span>
+                                                                <span>👤 {task.Assignees}</span>
+                                                            </div>
+                                                            <button onClick={() => handleEdit(task)}>Edit</button>
+                                                            <button onClick={() => dispatch(deletedata(task.id))}>Delete</button>
+                                                        </div>
 
-                                        </div>
+
+                                                        <p></p>
+
+
+                                                    </div>
+                                                )
+                                            ))
+                                        }
                                     </div>
                                     <div className={`${cardClasses} bg-gray-50`}>
                                         <h2 className="font-semibold">DONE 1</h2>
-                                        <div className="mt-2">
-                                            <div className={textClasses}>
-                                                <p>Try leaving a comment on this issue.</p>
-                                                <div className="flex justify-between mt-2">
-                                                    <span>⬆️</span>
-                                                    <span>👤</span>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        {
+                                            Taskdata.map((task, i) => (
+                                                (
+                                                    task.Status === "Done"
+                                                ) && (
+                                                    <div key={i} className="mt-2" >
+                                                        <div className={textClasses}>
+                                                            <p>
+                                                                {task.ShortSummary}
+                                                            </p>
+                                                            <div className="flex justify-between mt-2">
+                                                                <span>⬇️ {task.Priority}</span>
+                                                                <span>👤 {task.Assignees}</span>
+                                                            </div>
+                                                            <button onClick={() => handleEdit(task)}>Edit</button>
+                                                            <button onClick={() => dispatch(deletedata(task.id))}>Delete</button>
+                                                        </div>
+
+
+                                                        <p></p>
+
+
+                                                    </div>
+                                                )
+                                            ))
+                                        }
                                     </div>
                                 </div>
                             </div>

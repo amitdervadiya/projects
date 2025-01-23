@@ -25,7 +25,9 @@ export default function Forms() {
   
     const addTask = () => {
       dispatch(adddata({ id: String(Date.now()), IssueType, Priority, Reporter, Assignees, ShortSummary, Description, Status }));
+      
     };
+
   return (
     <>
 

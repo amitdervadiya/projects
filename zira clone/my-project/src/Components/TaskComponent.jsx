@@ -23,7 +23,6 @@ const TaskComponent = ({ task, onSave, onClose }) => {
     return null;
   }
 
-
   return (
     <div className="p-6 bg-card text-card-foreground rounded-lg shadow-md">
 

@@ -22,6 +22,7 @@ function App() {
             <Route path="/" element={<Hero />} />
             <Route path="/forms" element={<Forms />} />
             <Route path="/taskcomponent" element={<TaskComponent />} />
+           
           </Routes>
         </BrowserRouter>
 

@@ -5,7 +5,7 @@ import TaskComponent from "./TaskComponent";
 
 export default function Table() {
   const dispatch = useDispatch();
-  const [Status, setStatus] = useState(null);
+  const [Status, setStatus] = useState();
   const [IssueType, setIssueType] = useState();
   const [Priority, setPriority] = useState();
   const [Reporter, setReporter] = useState();

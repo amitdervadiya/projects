@@ -23,7 +23,7 @@
     {
       "id": "1737295998690",
       "IssueType": "Task",
-      "Priority": "High ",
+      "Priority": "Medium",
       "Reporter": "Lord Gaben",
       "Assignees": [
         "sanjay",
@@ -31,190 +31,27 @@
       ],
       "ShortSummary": "issue are not correct",
       "Description": "Yours in the padded sleeve, your everyday",
-      "Status": "Backlog"
+      "Status": "Backlog",
+      "completed": true
     },
     {
-      "id": "3",
-      "IssueType": "Task",
-      "ShortSummary": "issue are correct",
-      "Description": "Your  your everyday",
-      "Reporter": "men's clothing",
-      "Assignees": [
-        "amit",
-        "rahil"
-      ],
-      "Priority": "High",
-      "Status": "In Progress"
-    },
-    {
-      "id": "4",
-      "IssueType": "Task",
-      "ShortSummary": "issue are correct",
-      "Description": "Your  your everyday",
-      "Reporter": "men's clothing",
-      "Assignees": [
-        "amit",
-        "rahil"
-      ],
-      "Priority": "High"
-    },
-    {
-      "id": "5",
-      "IssueType": "Task",
-      "ShortSummary": "issue are ",
-      "Description": "Your  your everyday",
-      "Reporter": "men's clothing",
-      "Assignees": [
-        "amit",
-        "rahil"
-      ],
-      "Priority": "High"
-    },
-    {
-      "id": "6",
-      "IssueType": "Task",
-      "ShortSummary": "issue are ",
-      "Description": "Your  your everyday",
-      "Reporter": "men's clothing",
-      "Assignees": [
-        "amit",
-        "rahil"
-      ],
-      "Priority": "Medium"
-    },
-    {
-      "id": "1737299505610",
+      "id": "1737620150389",
       "IssueType": "Bug",
-      "Priority": "High",
-      "Reporter": "rahil",
+      "Reporter": "sanjay",
       "Assignees": "rahil",
-      "ShortSummary": "tjt",
-      "Description": "kgykyik"
+      "ShortSummary": "sanjay papudi",
+      "Description": "pubg",
+      "Status": "In Progress",
+      "Priority": "Highest"
     },
     {
-      "id": "1737302482186",
-      "Status": null
-    },
-    {
-      "id": "1737302483395",
-      "Status": null
-    },
-    {
-      "id": "1737302483571",
-      "Status": null
-    },
-    {
-      "id": "1737302483762",
-      "Status": null
-    },
-    {
-      "id": "1737353615925",
-      "IssueType": "Bug",
-      "Priority": "Medium",
-      "Reporter": "rahil",
-      "Assignees": "amit",
-      "ShortSummary": "rahil sakriya",
-      "Description": "gdfghghghghghghghghghghghghgh",
-      "Status": "SelectedforDevelopment",
-      "completed": false,
-      "OriginalEstimate": "45",
-      "TimeLogged": "25"
-    },
-    {
-      "id": "1737356729717",
-      "Assignees": "sanjay",
-      "ShortSummary": "",
-      "Description": "",
-      "Status": null
-    },
-    {
-      "id": "1737356733436",
-      "Assignees": "sanjay",
-      "ShortSummary": "",
-      "Description": "",
-      "Status": null
-    },
-    {
-      "id": "1737356736828",
-      "Assignees": "sanjay",
-      "ShortSummary": "adAD",
-      "Description": "",
-      "Status": null
-    },
-    {
-      "id": "1737356737676",
-      "Assignees": "sanjay",
-      "ShortSummary": "adAD",
-      "Description": "",
-      "Status": null
-    },
-    {
-      "id": "1737356738116",
-      "Assignees": "sanjay",
-      "ShortSummary": "adAD",
-      "Description": "",
-      "Status": null
-    },
-    {
-      "id": "1737356738300",
-      "Assignees": "sanjay",
-      "ShortSummary": "adAD",
-      "Description": "",
-      "Status": null
-    },
-    {
-      "id": "1737356756436",
-      "IssueType": "Bug",
-      "Priority": "High",
-      "Reporter": "sanjay",
-      "Assignees": "sanjay",
-      "ShortSummary": "adAD",
-      "Description": "AAAAA",
-      "Status": null
-    },
-    {
-      "id": "1737356757348",
-      "IssueType": "Bug",
-      "Priority": "High",
-      "Reporter": "sanjay",
-      "Assignees": "sanjay",
-      "ShortSummary": "adAD",
-      "Description": "AAAAA",
-      "Status": null
-    },
-    {
-      "id": "1737356757509",
-      "IssueType": "Bug",
-      "Priority": "High",
-      "Reporter": "sanjay",
-      "Assignees": "sanjay",
-      "ShortSummary": "adAD",
-      "Description": "AAAAA",
-      "Status": null
-    },
-    {
-      "id": "1737360069062",
+      "id": "1737620488701",
       "IssueType": "story",
+      "Priority": "Highest",
       "Reporter": "sanjay",
-      "Assignees": "rahil",
-      "ShortSummary": "sanjay taili",
-      "Description": "bhai papudi",
-      "Status": "Selectedfordevelopment"
-    },
-    {
-      "id": "1737361545432",
-      "Priority": "High",
-      "Status": null
-    },
-    {
-      "id": "1737361576432",
-      "IssueType": "Bug",
-      "Priority": "High",
-      "Reporter": "rahil",
-      "Assignees": "rahil",
-      "ShortSummary": "uoiyhlgt8i",
-      "Description": "gty8yh98y7u09u9",
-      "Status": null
+      "ShortSummary": "cjhgcfjfgjcfgj",
+      "Description": "add",
+      "Status": "In Progress"
     }
   ]
 }
